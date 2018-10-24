@@ -1,0 +1,11 @@
+never spec {    /* !([] ((! (((state==0)) && ([] ((presence) && (arm))))) || (<> ((state==2))))) */
+T0_init:
+	do
+	:: (! (((state==2))) && ((presence) && (arm)) && ((state==0))) -> goto accept_S4
+	:: (1) -> goto T0_init
+	od;
+accept_S4:
+	do
+	:: (! (((state==2))) && ((presence) && (arm))) -> goto accept_S4
+	od;
+}

@@ -1,0 +1,1 @@
+This exercise includes the formal verification of the models from exercises 4.1, 5.1 and 6.1 using the verification method known as Model Checking with Spin.
